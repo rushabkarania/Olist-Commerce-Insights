@@ -4,6 +4,10 @@ I built this project to understand how an e-commerce business performs beyond it
 
 The project brings together Python, MySQL and Power BI. I used Python to prepare and analyse the data, SQL to answer business questions, and Power BI to present the results across four report pages. I also included a browser dashboard so the data can be explored without installing Power BI Desktop.
 
+## Live dashboard
+
+[Explore the interactive browser dashboard](https://rushabkarania.github.io/Olist-Commerce-Insights/)
+
 ![Dashboard preview](assets/dashboard-preview.png)
 
 ## What I looked at

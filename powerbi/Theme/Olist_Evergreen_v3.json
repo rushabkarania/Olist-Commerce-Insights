@@ -1,0 +1,157 @@
+{
+  "name": "Olist · Evergreen",
+  "dataColors": [
+    "#187D69",
+    "#557B82",
+    "#C4934F",
+    "#BC6754",
+    "#8BA99B",
+    "#8A7B68",
+    "#74877C",
+    "#9E7155"
+  ],
+  "background": "#FFFFFF",
+  "foreground": "#20352F",
+  "tableAccent": "#187D69",
+  "good": "#187D69",
+  "neutral": "#C4934F",
+  "bad": "#BC6754",
+  "textClasses": {
+    "title": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 14,
+      "color": "#20352F"
+    },
+    "header": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 12,
+      "color": "#20352F"
+    },
+    "label": {
+      "fontFace": "Segoe UI",
+      "fontSize": 12,
+      "color": "#20352F"
+    },
+    "callout": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 30,
+      "color": "#163A35"
+    }
+  },
+  "visualStyles": {
+    "*": {
+      "*": {
+        "title": [
+          {
+            "show": true,
+            "fontColor": {
+              "solid": {
+                "color": "#20352F"
+              }
+            },
+            "fontSize": 13,
+            "fontFamily": "Segoe UI Semibold"
+          }
+        ],
+        "background": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "transparency": 0
+          }
+        ],
+        "border": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#E0E6DC"
+              }
+            },
+            "radius": 8
+          }
+        ],
+        "visualHeader": [
+          {
+            "show": true
+          }
+        ]
+      }
+    },
+    "tableEx": {
+      "*": {
+        "grid": [
+          {
+            "gridVertical": false,
+            "gridHorizontal": true,
+            "rowPadding": 6
+          }
+        ],
+        "columnHeaders": [
+          {
+            "fontColor": {
+              "solid": {
+                "color": "#163A35"
+              }
+            },
+            "backColor": {
+              "solid": {
+                "color": "#EAF0E7"
+              }
+            },
+            "fontSize": 12
+          }
+        ],
+        "values": [
+          {
+            "fontColor": {
+              "solid": {
+                "color": "#20352F"
+              }
+            },
+            "fontSize": 12
+          }
+        ]
+      }
+    },
+    "slicer": {
+      "*": {
+        "header": [
+          {
+            "show": false
+          }
+        ],
+        "items": [
+          {
+            "fontFamily": "Segoe UI",
+            "textSize": 14,
+            "fontColor": {
+              "solid": {
+                "color": "#20352F"
+              }
+            },
+            "padding": 8
+          }
+        ],
+        "data": [
+          {
+            "mode": "Dropdown"
+          }
+        ]
+      }
+    },
+    "actionButton": {
+      "*": {
+        "outline": [
+          {
+            "show": false
+          }
+        ]
+      }
+    }
+  }
+}

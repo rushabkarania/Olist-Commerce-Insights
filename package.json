@@ -1,0 +1,9 @@
+{
+  "name": "olist-commerce-insights",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node tests/analytics.test.mjs",
+    "build": "python scripts/build_site.py"
+  }
+}

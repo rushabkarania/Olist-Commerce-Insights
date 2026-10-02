@@ -1,0 +1,16 @@
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+data/raw/*.csv
+data/processed/*.csv
+dist/
+*.abf
+powerbi/**/.pbi/
+web/data.json
+*.bim.backup
+*.bim.tmp

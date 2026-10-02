@@ -1,0 +1,39 @@
+MIT License
+
+Copyright (c) 2026 Rushab Rasik Karania
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Scope: original project code and authored interface assets. Source/derived
+datasets and data-derived output are excluded and remain governed by the
+data terms below.
+
+Data attribution and terms
+
+Dataset: Brazilian E-Commerce Public Dataset by Olist
+Creator: Olist
+Source: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
+Licence: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
+Licence text: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+
+This project cleans and joins the source records, aggregates reviews per order, translates category labels, replaces long identifiers with compact internal keys for the report snapshot, and creates derived analytical summaries.
+
+The licence applies to source and derived data, including `powerbi/Data`, `powerbi/SourceKeys`, the embedded records in `powerbi/Olist.SemanticModel/model.bim`, `web/data.json`, `web/data.json.gz`, and data-derived analytical output. Reuse must retain attribution, be noncommercial and comply with the share-alike conditions. The MIT licence for original project code does not override these data terms.
+
+The Olist name is used only to identify the public dataset. This independent student portfolio is not affiliated with or endorsed by Olist.

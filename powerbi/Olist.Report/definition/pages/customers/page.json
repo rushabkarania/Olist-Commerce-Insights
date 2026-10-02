@@ -1,0 +1,156 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "customers",
+  "displayName": "Customers",
+  "displayOption": "FitToPage",
+  "width": 1440,
+  "height": 900,
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#F5F3ED'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visualInteractions": [
+    {
+      "source": "customers_repeat",
+      "target": "customers_sidebar",
+      "type": "NoFilter"
+    },
+    {
+      "source": "customers_repeat",
+      "target": "customers_brand",
+      "type": "NoFilter"
+    },
+    {
+      "source": "customers_repeat",
+      "target": "customers_brand_sub",
+      "type": "NoFilter"
+    },
+    {
+      "source": "customers_repeat",
+      "target": "customers_nav_overview",
+      "type": "NoFilter"
+    },
+    {
+      "source": "customers_repeat",
+      "target": "customers_nav_sales",
+      "type": "NoFilter"
+    },
+    {
+      "source": "customers_repeat",
+      "target": "customers_nav_customers",
+      "type": "NoFilter"
+    },
+    {
+      "source": "customers_repeat",
+      "target": "customers_nav_delivery",
+      "type": "NoFilter"
+    },
+    {
+      "source": "customers_repeat",
+      "target": "customers_sidebar_note",
+      "type": "NoFilter"
+    },
+    {
+      "source": "customers_repeat",
+      "target": "customers_title",
+      "type": "NoFilter"
+    },
+    {
+      "source": "customers_repeat",
+      "target": "customers_subtitle",
+      "type": "NoFilter"
+    },
+    {
+      "source": "customers_repeat",
+      "target": "customers_filter_year",
+      "type": "NoFilter"
+    },
+    {
+      "source": "customers_repeat",
+      "target": "customers_filter_month",
+      "type": "NoFilter"
+    },
+    {
+      "source": "customers_repeat",
+      "target": "customers_filter_state",
+      "type": "NoFilter"
+    },
+    {
+      "source": "customers_repeat",
+      "target": "customers_scope",
+      "type": "NoFilter"
+    },
+    {
+      "source": "customers_repeat",
+      "target": "customers_footer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "customers_repeat",
+      "target": "customers_kpi_0",
+      "type": "NoFilter"
+    },
+    {
+      "source": "customers_repeat",
+      "target": "customers_kpi_1",
+      "type": "NoFilter"
+    },
+    {
+      "source": "customers_repeat",
+      "target": "customers_kpi_2",
+      "type": "NoFilter"
+    },
+    {
+      "source": "customers_repeat",
+      "target": "customers_kpi_3",
+      "type": "NoFilter"
+    },
+    {
+      "source": "customers_repeat",
+      "target": "customers_kpi_4",
+      "type": "NoFilter"
+    },
+    {
+      "source": "customers_repeat",
+      "target": "customers_reach",
+      "type": "NoFilter"
+    },
+    {
+      "source": "customers_repeat",
+      "target": "customers_activity",
+      "type": "NoFilter"
+    },
+    {
+      "source": "customers_repeat",
+      "target": "customers_geography",
+      "type": "NoFilter"
+    },
+    {
+      "source": "customers_repeat",
+      "target": "customers_repeat_note",
+      "type": "NoFilter"
+    }
+  ]
+}

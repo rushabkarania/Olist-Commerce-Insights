@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Explore Olist sales, customers and delivery performance. A Python, SQL and Power BI portfolio project by Rushab Karania."
+    />
+    <title>Olist Commerce Insights | Rushab Karania</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <a class="brand" href="./">olist<span>.</span></a>
+      <p class="brand-label">COMMERCE ANALYTICS</p>
+      <p class="nav-caption">REPORT PAGES</p>
+      <nav aria-label="Dashboard pages" id="navigation"></nav>
+      <div class="sidebar-bottom">
+        <span>Brazilian e-commerce</span><span>2016–2018 snapshot</span
+        ><a
+          href="https://github.com/rushabkarania/Olist-Commerce-Insights"
+          target="_blank"
+          rel="noreferrer"
+          >Project on GitHub</a
+        >
+      </div>
+    </aside>
+    <main>
+      <header>
+        <div>
+          <h1 id="page-title">Commerce at a glance</h1>
+          <p id="page-subtitle">
+            Sales, customer reach and delivery performance
+          </p>
+        </div>
+        <div class="header-actions">
+          <span id="page-number">01 / 04</span
+          ><a class="button secondary" href="downloads/Olist_PowerBI.zip"
+            >Power BI project</a
+          >
+        </div>
+      </header>
+      <section class="filter-row" aria-label="Shared dashboard filters">
+        <label
+          >Purchase year<select id="year">
+            <option value="">All years</option>
+          </select></label
+        >
+        <label
+          >Purchase month<select id="month">
+            <option value="">All months</option>
+          </select></label
+        >
+        <label
+          >Customer state<select id="state">
+            <option value="">All states</option>
+          </select></label
+        >
+        <div class="filter-actions">
+          <button id="reset" class="button secondary">Reset filters</button
+          ><button id="export" class="button secondary">Export KPIs</button>
+        </div>
+      </section>
+      <div class="context-row">
+        <span id="scope">Delivered orders · Currency: BRL (R$)</span
+        ><span class="demo-label">Interactive web edition</span>
+      </div>
+      <div id="selections" class="selections" aria-live="polite"></div>
+      <div id="status" role="status" class="status">
+        Loading the Olist data snapshot…
+      </div>
+      <section
+        id="kpis"
+        class="kpis"
+        aria-label="Key performance indicators"
+      ></section>
+      <section
+        id="charts"
+        class="charts"
+        aria-label="Dashboard charts and detail tables"
+      ></section>
+      <details class="methodology">
+        <summary>Metric definitions &amp; data notes</summary>
+        <div id="methodology-content">
+          <p>
+            Commercial measures use delivered orders only. Order value = product
+            prices + freight; it is not platform profit or net revenue.
+            Customers use the unique-customer identifier. Repeat customers have
+            at least two delivered orders within the current selection.
+          </p>
+          <p>
+            Delivery is late when its calendar date is after the estimated date.
+            Missing delivery dates are excluded from on-time rates. Review
+            averages use one prepared score per order; low reviews are scores of
+            1 or 2. Delay and review comparisons show association, not
+            causation.
+          </p>
+          <p>
+            Click a bar or monthly point to filter the current page. Shared
+            dropdown filters persist across pages; chart selections clear when
+            you switch pages. Payment methods can overlap across orders.
+            Category selection limits financial values to that category and
+            order counts to matching orders.
+          </p>
+          <p>
+            The historical snapshot has sparse initial months and a partial
+            final year. A small filtered sample can produce volatile rates. The
+            web edition computes metrics from the same prepared snapshot; it is
+            a browser implementation, not an embedded Power BI report.
+          </p>
+        </div>
+      </details>
+      <footer>
+        <span>By Rushab Karania · Python, SQL &amp; Power BI</span
+        ><a
+          href="https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce"
+          target="_blank"
+          rel="noreferrer"
+          >Source: Olist public dataset · CC BY-NC-SA 4.0</a
+        >
+      </footer>
+    </main>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

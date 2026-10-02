@@ -1,0 +1,131 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/1.0.0/schema.json",
+  "layoutOptimization": "None",
+  "themeCollection": {
+    "baseTheme": {
+      "name": "CY24SU06",
+      "reportVersionAtImport": "5.55",
+      "type": "SharedResources"
+    },
+    "customTheme": {
+      "name": "Olist_Evergreen_v3",
+      "reportVersionAtImport": "5.55",
+      "type": "RegisteredResources"
+    }
+  },
+  "resourcePackages": [
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "Olist_Evergreen_v3",
+          "path": "Olist_Evergreen_v3.json",
+          "type": "CustomTheme"
+        },
+        {
+          "name": "Olist_overview_white_20261001.png",
+          "path": "Olist_overview_white_20261001.png",
+          "type": "Image"
+        },
+        {
+          "name": "Olist_sales_white_20261001.png",
+          "path": "Olist_sales_white_20261001.png",
+          "type": "Image"
+        },
+        {
+          "name": "Olist_truck_white_20261001.png",
+          "path": "Olist_truck_white_20261001.png",
+          "type": "Image"
+        },
+        {
+          "name": "Olist_users_white_20261001.png",
+          "path": "Olist_users_white_20261001.png",
+          "type": "Image"
+        },
+        {
+          "name": "Olist_cart_sage_20261001.png",
+          "path": "Olist_cart_sage_20261001.png",
+          "type": "Image"
+        },
+        {
+          "name": "Olist_clock_sage_20261001.png",
+          "path": "Olist_clock_sage_20261001.png",
+          "type": "Image"
+        },
+        {
+          "name": "Olist_late_sage_20261001.png",
+          "path": "Olist_late_sage_20261001.png",
+          "type": "Image"
+        },
+        {
+          "name": "Olist_ontime_sage_20261001.png",
+          "path": "Olist_ontime_sage_20261001.png",
+          "type": "Image"
+        },
+        {
+          "name": "Olist_orders_sage_20261001.png",
+          "path": "Olist_orders_sage_20261001.png",
+          "type": "Image"
+        },
+        {
+          "name": "Olist_package_sage_20261001.png",
+          "path": "Olist_package_sage_20261001.png",
+          "type": "Image"
+        },
+        {
+          "name": "Olist_percent_sage_20261001.png",
+          "path": "Olist_percent_sage_20261001.png",
+          "type": "Image"
+        },
+        {
+          "name": "Olist_repeat_sage_20261001.png",
+          "path": "Olist_repeat_sage_20261001.png",
+          "type": "Image"
+        },
+        {
+          "name": "Olist_review_sage_20261001.png",
+          "path": "Olist_review_sage_20261001.png",
+          "type": "Image"
+        },
+        {
+          "name": "Olist_star_sage_20261001.png",
+          "path": "Olist_star_sage_20261001.png",
+          "type": "Image"
+        },
+        {
+          "name": "Olist_store_sage_20261001.png",
+          "path": "Olist_store_sage_20261001.png",
+          "type": "Image"
+        },
+        {
+          "name": "Olist_truck_sage_20261001.png",
+          "path": "Olist_truck_sage_20261001.png",
+          "type": "Image"
+        },
+        {
+          "name": "Olist_user_sage_20261001.png",
+          "path": "Olist_user_sage_20261001.png",
+          "type": "Image"
+        },
+        {
+          "name": "Olist_users_sage_20261001.png",
+          "path": "Olist_users_sage_20261001.png",
+          "type": "Image"
+        },
+        {
+          "name": "Olist_wallet_sage_20261001.png",
+          "path": "Olist_wallet_sage_20261001.png",
+          "type": "Image"
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "defaultFilterActionIsDataFilter": true,
+    "defaultDrillFilterOtherVisuals": true,
+    "useEnhancedTooltips": true,
+    "exportDataMode": "AllowSummarized",
+    "useStylableVisualContainerHeader": true
+  }
+}

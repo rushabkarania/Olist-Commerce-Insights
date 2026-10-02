@@ -6,14 +6,18 @@
 -- Start the MySQL client with local infile enabled:
 -- mysql --local-infile=1 -u root -p
 --
+-- The MySQL server must also have local_infile enabled.
+-- Check it with: SHOW GLOBAL VARIABLES LIKE 'local_infile';
+-- If disabled, an administrator can enable it for this import:
+-- SET GLOBAL local_infile = 1;
+-- Restore the previous setting after the import if it was changed.
+--
 -- This script assumes the project is located at:
--- C:/path/to/Olist-Commerce-Analytics/
+-- C:/path/to/Olist-Commerce-Insights/
 --
 -- If you move the project, update the file paths below.
 
 USE olist_analytics;
-
-SET SESSION local_infile = 1;
 
 -- -----------------------------------------------------
 -- Optional: clear tables before reloading
@@ -33,7 +37,7 @@ DELETE FROM customers;
 -- 1. Customers
 -- -----------------------------------------------------
 LOAD DATA LOCAL INFILE
-'C:/path/to/Olist-Commerce-Analytics/data/processed/customers_clean.csv'
+'C:/path/to/Olist-Commerce-Insights/data/processed/customers_clean.csv'
 INTO TABLE customers
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
@@ -51,7 +55,7 @@ IGNORE 1 LINES
 -- 2. Products
 -- -----------------------------------------------------
 LOAD DATA LOCAL INFILE
-'C:/path/to/Olist-Commerce-Analytics/data/processed/products_clean.csv'
+'C:/path/to/Olist-Commerce-Insights/data/processed/products_clean.csv'
 INTO TABLE products
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
@@ -81,7 +85,7 @@ SET
 -- 3. Sellers
 -- -----------------------------------------------------
 LOAD DATA LOCAL INFILE
-'C:/path/to/Olist-Commerce-Analytics/data/processed/sellers_clean.csv'
+'C:/path/to/Olist-Commerce-Insights/data/processed/sellers_clean.csv'
 INTO TABLE sellers
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
@@ -98,7 +102,7 @@ IGNORE 1 LINES
 -- 4. Category Translation
 -- -----------------------------------------------------
 LOAD DATA LOCAL INFILE
-'C:/path/to/Olist-Commerce-Analytics/data/processed/category_translation_clean.csv'
+'C:/path/to/Olist-Commerce-Insights/data/processed/category_translation_clean.csv'
 INTO TABLE category_translation
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
@@ -113,7 +117,7 @@ IGNORE 1 LINES
 -- 5. Geolocation
 -- -----------------------------------------------------
 LOAD DATA LOCAL INFILE
-'C:/path/to/Olist-Commerce-Analytics/data/processed/geolocation_zip_clean.csv'
+'C:/path/to/Olist-Commerce-Insights/data/processed/geolocation_zip_clean.csv'
 INTO TABLE geolocation
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
@@ -129,7 +133,7 @@ IGNORE 1 LINES
 -- 6. Orders
 -- -----------------------------------------------------
 LOAD DATA LOCAL INFILE
-'C:/path/to/Olist-Commerce-Analytics/data/processed/orders_clean.csv'
+'C:/path/to/Olist-Commerce-Insights/data/processed/orders_clean.csv'
 INTO TABLE orders
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
@@ -179,7 +183,7 @@ SET
 -- 7. Order Items
 -- -----------------------------------------------------
 LOAD DATA LOCAL INFILE
-'C:/path/to/Olist-Commerce-Analytics/data/processed/order_items_clean.csv'
+'C:/path/to/Olist-Commerce-Insights/data/processed/order_items_clean.csv'
 INTO TABLE order_items
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
@@ -201,7 +205,7 @@ SET
 -- 8. Payments
 -- -----------------------------------------------------
 LOAD DATA LOCAL INFILE
-'C:/path/to/Olist-Commerce-Analytics/data/processed/payments_clean.csv'
+'C:/path/to/Olist-Commerce-Insights/data/processed/payments_clean.csv'
 INTO TABLE payments
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
@@ -232,7 +236,7 @@ SET
 -- 9. Order-level Reviews
 -- -----------------------------------------------------
 LOAD DATA LOCAL INFILE
-'C:/path/to/Olist-Commerce-Analytics/data/processed/reviews_order_clean.csv'
+'C:/path/to/Olist-Commerce-Insights/data/processed/reviews_order_clean.csv'
 INTO TABLE order_reviews
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'

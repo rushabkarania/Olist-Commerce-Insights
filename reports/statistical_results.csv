@@ -1,4 +1,4 @@
 test,statistic,p_value
 Mann–Whitney U: late vs on-time review scores,467426830.5,0.0
-Chi-square: delivery status vs low review,14705.776181096457,0.0
+Chi-square: delivery status vs low review,15086.673085540493,0.0
 Spearman: delay days vs review score,-0.17617247976426434,0.0

@@ -1,8 +1,8 @@
 # Olist Commerce Insights
 
-I built this project to understand how an e-commerce business performs beyond its sales totals. Using Olist's Brazilian e-commerce dataset, I looked at what customers buy, whether they return, and how delivery delays relate to their reviews.
+Olist Commerce Insights examines how an e-commerce business performs beyond its sales totals. Using Olist's Brazilian e-commerce dataset, the project analyses what customers buy, whether they return, and how delivery delays relate to their reviews.
 
-The project brings together Python, MySQL and Power BI. I used Python to prepare and analyse the data, SQL to answer business questions, and Power BI to present the results across four report pages. I also included a browser dashboard so the data can be explored without installing Power BI Desktop.
+The project brings together Python, MySQL and Power BI. Python handles data preparation and analysis, SQL answers business questions, and Power BI presents the results across four report pages. A browser dashboard also allows the data to be explored without installing Power BI Desktop.
 
 ## Live dashboard
 
@@ -10,20 +10,20 @@ The project brings together Python, MySQL and Power BI. I used Python to prepare
 
 ![Dashboard preview](assets/dashboard-preview.png)
 
-## What I looked at
+## Analysis areas
 
 - **Overview:** order value, order volume and overall performance.
 - **Sales & Products:** category performance, freight costs and payment methods.
 - **Customers:** customer locations and repeat purchases.
 - **Delivery & Reviews:** delivery times, late orders and customer satisfaction.
 
-Year, month and state filters let you explore the same selection across the report pages.
+Year, month and state filters apply the same selection across the report pages.
 
 ## Main findings
 
 For delivered orders, the prepared dataset contains **96,478 orders**, **93,358 unique customers** and approximately **R$15.42 million in order value**, including products and freight.
 
-A few findings stood out:
+Key findings include:
 
 - On-time or early deliveries received an average review of **4.29/5**, compared with **2.27/5** for late deliveries.
 - **2,801 customers**, about **3%**, placed more than one delivered order during the period covered.
@@ -38,7 +38,7 @@ Order value includes products and freight for delivered orders. Average order va
 
 ## How the project works
 
-I checked missing values, duplicates, timestamps and payment records before preparing the analysis tables. Orders can have several items or payment records, so I kept those tables separate to avoid counting the same values more than once.
+Data preparation includes checks for missing values, duplicates, timestamps and payment records. Orders can have several items or payment records, so these tables are kept separate to avoid counting the same values more than once.
 
 The SQL analysis covers monthly trends, category rankings, repeat purchases and delivery performance. The statistical notebook uses Mann–Whitney U, chi-square and Spearman tests to examine delivery and review patterns.
 

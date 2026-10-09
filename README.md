@@ -78,4 +78,4 @@ To repeat the analysis, download the original dataset into `data/raw/`, install 
 
 The data comes from the [Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce), licensed under **CC BY-NC-SA 4.0**. Those terms also apply to the derived data and report content. Original code and interface assets use the MIT licence. Both sets of terms are included in [LICENSE](LICENSE).
 
-**Rushab Karania**
+
